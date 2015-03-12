@@ -1,6 +1,8 @@
 Spring MVC приложения в Intellj IDEA
 ------------------------------------
 
+Документация по Spring Framework: https://spring.io/docs
+
 * Использование циклов в JSP: <http://localhost:8080/list>
 * Таблица умножения: <http://localhost:8080/table?size=22>
  
