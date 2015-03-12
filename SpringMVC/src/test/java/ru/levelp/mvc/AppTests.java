@@ -17,7 +17,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration("mvc-dispatcher-servlet-test.xml")
+@ContextConfiguration("classpath:mvc-dispatcher-servlet-test.xml")
 public class AppTests {
     @SuppressWarnings("SpringJavaAutowiringInspection")
     @Autowired

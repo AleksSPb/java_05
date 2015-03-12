@@ -15,10 +15,10 @@ import java.util.List;
 @Controller
 @RequestMapping("/")
 public class HelloController {
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String printWelcome(ModelMap model) {
         // Добавляем аттрибут ${message} для hello.jsp
-        model.addAttribute("message", "Hello world!");
+        model.addAttribute("message", "Добро пожаловать на наш сайт!");
         model.addAttribute("a", 2);
         model.addAttribute("b", 12);
         return "hello";

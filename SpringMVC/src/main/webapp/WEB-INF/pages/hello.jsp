@@ -1,12 +1,14 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<head>
+</head>
 <body>
+Русский
 <h1>${message}</h1>
 
 a + b = ${a + b}
 
-<%
-    //javax.servlet.http.HttpServletRequest r = request;
-    //r.getDispatcherType()D.getDispatcherType
-%>
+<a href="${pageContext.request.contextPath}/login">Вход в систему</a>
+
 </body>
 </html>
