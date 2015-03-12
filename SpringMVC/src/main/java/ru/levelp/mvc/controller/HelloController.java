@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.ArrayList;
 import java.util.List;
 
+//-->
 @Controller
 @RequestMapping("/")
 public class HelloController {
@@ -87,3 +88,4 @@ public class HelloController {
         return model;
     }
 }
+//<--
