@@ -16,6 +16,8 @@ import java.io.IOException;
 public class ResumeController {
 
     /**
+     * Поиск резюме
+     *
      * @param query Запрос для поиска
      */
     @RequestMapping("/search")
@@ -28,6 +30,15 @@ public class ResumeController {
         return "search";
     }
 
+    /**
+     * Добавление нового резюме
+     *
+     * @param modelMap
+     * @param resume
+     * @param name
+     * @return
+     * @throws IOException
+     */
     @RequestMapping("/addResume")
     public String resume(ModelMap modelMap,
                          @RequestParam(value = "resume", required = false)
