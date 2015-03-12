@@ -12,6 +12,7 @@
       <entry name="!?*.flex" />
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
     </wildcardResourcePatterns>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="false">
@@ -22,15 +23,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="01_Exceptions" />
-        <module name="02_StringBuilder" />
-        <module name="03_SaveToFile" />
-        <module name="04_ProblemFileWriteRead" />
         <module name="SpringMVC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="04_ProblemFileWriteRead" target="1.7" />
       <module name="SpringMVC" target="1.6" />
     </bytecodeTargetLevel>
   </component>
