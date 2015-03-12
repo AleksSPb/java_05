@@ -5,6 +5,8 @@
 </head>
 <body>
 
+<h2>Добавить новое резюме</h2>
+
 <form action="${pageContext.request.contextPath}/addResume">
 
     <label>
