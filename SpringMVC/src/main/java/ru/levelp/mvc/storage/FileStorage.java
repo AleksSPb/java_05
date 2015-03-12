@@ -4,31 +4,57 @@ import java.io.*;
 import java.util.Scanner;
 
 /**
- *
+ * Хранение резюме в текстовом файле
  */
 public class FileStorage {
-    static String fileName = "C:\\resume.txt";
+    public static final String NOT_FOUND = "Ничего не найдено!";
+    static String fileName = "resume.txt";
 
-    public static void addNewResume(String name) throws IOException {
+    /**
+     * Добавить строчку в файл
+     *
+     * @param line строка
+     * @throws IOException
+     */
+    public static void addLine(String line) throws IOException {
         PrintWriter writer = new PrintWriter(
-                new FileWriter(new File(fileName), true)
+                new OutputStreamWriter(
+                        new FileOutputStream(fileName, /* Append */ true),
+                        "UTF-8")
         );
-        // TODO: UTF-8
-        writer.flush();
-        writer.println(name);
+        writer.println(line);
         writer.close();
     }
 
-    public static String search(String query) throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File(fileName));
-        while (scanner.hasNext()) {
-            String resume = scanner.nextLine();
-            if (resume.contains(query)) {
-                scanner.close();
-                return resume;
+    /**
+     * Поиск по подстроке
+     *
+     * @param query запрос (подстрока)
+     * @return Вся строка
+     */
+    public static String search(String query) {
+        try {
+            Scanner scanner = new Scanner(new File(fileName));
+            while (scanner.hasNext()) {
+                String resume = scanner.nextLine();
+                // Сравнение с игнорированием
+                if (resume.toUpperCase().contains(query.toUpperCase())) {
+                    scanner.close();
+                    return resume;
+                }
             }
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            return NOT_FOUND;
         }
-        scanner.close();
-        return "Ничего не найдено!";
+        return NOT_FOUND;
+    }
+
+    /**
+     * Тестируем работу
+     */
+    public static void main(String[] args) throws IOException {
+        addLine("Добавим строчку...");
+        addLine("И ещё одну строчку..");
     }
 }

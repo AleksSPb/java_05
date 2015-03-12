@@ -35,7 +35,7 @@ public class ResumeController {
                          @RequestParam(value = "name", required = false)
                          String name) throws IOException {
         if (name != null) {
-            FileStorage.addNewResume(name);
+            FileStorage.addLine(name);
         }
 
         if (resume == null)
