@@ -101,8 +101,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SpringMVC/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19190142" vertical-offset="350" max-vertical-offset="1734">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.64084506" vertical-offset="962" max-vertical-offset="1972">
+              <caret line="78" column="38" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -785,7 +785,7 @@
       <workItem from="1417194935756" duration="464000" />
       <workItem from="1426102843063" duration="118000" />
       <workItem from="1426177307028" duration="201000" />
-      <workItem from="1426184370158" duration="6787000" />
+      <workItem from="1426184370158" duration="6863000" />
     </task>
     <task id="LOCAL-00001" summary="Maven проект">
       <created>1416933489480</created>
@@ -851,7 +851,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27979000" />
+    <option name="totallyTimeSpent" value="28055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1353,8 +1353,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SpringMVC/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19190142" vertical-offset="350" max-vertical-offset="1734">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.64084506" vertical-offset="962" max-vertical-offset="1972">
+          <caret line="78" column="38" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
           <folding />
         </state>
       </provider>
