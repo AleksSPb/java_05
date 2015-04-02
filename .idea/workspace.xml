@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8db5f05-645d-4fd2-8765-c59700f4790f" name="Default" comment="Сохранение / загрузка из файла">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SpringMVC/src/test/java/jdbc/SQLiteJDBC.java" />
-      <change type="MOVED" beforePath="C:\Users\gtee\Desktop\java_05\SpringMVC\src\main\webapp\WEB-INF\mvc-dispatcher-servlet-test.xml" afterPath="$PROJECT_DIR$/SpringMVC/src/main/java/mvc-dispatcher-servlet-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringMVC/src/test/java/ru/levelp/mvc/AppTests.java" afterPath="$PROJECT_DIR$/SpringMVC/src/test/java/ru/levelp/mvc/AppTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringMVC/src/main/java/ru/levelp/mvc/controller/ResumeController.java" afterPath="$PROJECT_DIR$/SpringMVC/src/main/java/ru/levelp/mvc/controller/ResumeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringMVC/SpringMVC.iml" afterPath="$PROJECT_DIR$/SpringMVC/SpringMVC.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMVC_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMVC_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringMVC/pom.xml" afterPath="$PROJECT_DIR$/SpringMVC/pom.xml" />
+    <list default="true" id="c8db5f05-645d-4fd2-8765-c59700f4790f" name="Default" comment="JDBC">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lesson_05.iws" />
@@ -44,8 +36,8 @@
       <file leaf-file-name="ResumeController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SpringMVC/src/main/java/ru/levelp/mvc/controller/ResumeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1207627" vertical-offset="355" max-vertical-offset="1071">
-              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+            <state vertical-scroll-proportion="1.0487288" vertical-offset="49" max-vertical-offset="1071">
+              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1085,7 +1077,7 @@
       <workItem from="1426102843063" duration="118000" />
       <workItem from="1426177307028" duration="201000" />
       <workItem from="1426184370158" duration="6939000" />
-      <workItem from="1426195012986" duration="3100000" />
+      <workItem from="1426195012986" duration="3130000" />
     </task>
     <task id="LOCAL-00001" summary="Maven проект">
       <created>1416933489480</created>
@@ -1159,15 +1151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1426196278030</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="JDBC">
+      <created>1426198380360</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1426198380360</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31231000" />
+    <option name="totallyTimeSpent" value="31261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1612" height="876" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1182,7 +1180,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19946092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1229,7 +1227,8 @@
     <MESSAGE value="Домашнее задание" />
     <MESSAGE value="Save" />
     <MESSAGE value="Сохранение / загрузка из файла" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сохранение / загрузка из файла" />
+    <MESSAGE value="JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDBC" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1656,8 +1655,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SpringMVC/src/main/java/ru/levelp/mvc/controller/ResumeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1207627" vertical-offset="355" max-vertical-offset="1071">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        <state vertical-scroll-proportion="1.0487288" vertical-offset="49" max-vertical-offset="1071">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
