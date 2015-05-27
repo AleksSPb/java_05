@@ -31,3 +31,6 @@ stringBuilder.txt
 object.txt
 hello.txt
 model.Resume.xml
+.idea
+target
+*.iml
