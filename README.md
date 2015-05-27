@@ -59,6 +59,8 @@ ex.printStackTrace();
 
 .\02_StringBuilder\src\test\java\StringBuilderTest.java
 
+
+
 Вставляем подстроку в позицию 13
 Удаляем кусок
 Цепочка действий

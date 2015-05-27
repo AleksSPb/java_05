@@ -30,7 +30,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="01_Exceptions" target="1.5" />
+      <module name="02_StringBuilder" target="1.5" />
+      <module name="03_SaveToFile" target="1.5" />
       <module name="04_ProblemFileWriteRead" target="1.7" />
+      <module name="java_05" target="1.5" />
       <module name="SpringMVC" target="1.6" />
     </bytecodeTargetLevel>
   </component>

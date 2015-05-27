@@ -1,6 +1,8 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+//
+//
 /**
  * "Склеивание" строк при помощи класса StringBuilder.
  * <p/>
