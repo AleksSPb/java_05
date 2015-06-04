@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>java</groupId>
-    <artifactId>lesson_05</artifactId>
+    <artifactId>java_05</artifactId>
     <packaging>pom</packaging>
     <version>1.0</version>
     <name>Java Junior Developer 4</name>

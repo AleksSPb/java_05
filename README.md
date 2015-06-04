@@ -36,9 +36,9 @@ Scanner
 
 .\01_Exceptions\src\main\java\ExceptionDemo.java
 
-.\01_Exceptions\src\main\java\MyException.java
+.\01_Exceptions\src\main\java\MyRuntimeException.java
 
-.\01_Exceptions\src\main\java\MyException2.java
+.\01_Exceptions\src\main\java\MyException.java
 
 .\01_Exceptions\src\main\java\RuntimeExceptionDemo.java
 

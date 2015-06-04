@@ -12,7 +12,7 @@ public class RuntimeExceptionDemo {
 
     private static void g(int i) {
         if (i == 0)
-            throw new RuntimeException("i == 0");
+            throw new MyRuntimeException("i == 0", 1, 1.0);
         g(i - 1);
     }
 }

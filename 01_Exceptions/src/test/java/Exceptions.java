@@ -1,11 +1,15 @@
 import org.junit.Test;
 
+import java.util.Random;
+
 import static org.junit.Assert.assertEquals;
 
 /**
  * Исключения
  */
 public class Exceptions {
+    Random random = new Random();
+
     @Test
     public void testRuntimeException() {
         try {
@@ -14,7 +18,7 @@ public class Exceptions {
             f(10);
 
             // ...
-        } catch (MyException ex) {
+        } catch (MyRuntimeException ex) {
             ex.printStackTrace();
             assertEquals("Моё исключение", ex.name);
             assertEquals(23, ex.i);
@@ -27,7 +31,7 @@ public class Exceptions {
 
     private void f(int i) {
         if (i == 0) {
-            throw new MyException("Моё исключение", 23, 2.3);
+            throw new MyRuntimeException("Моё исключение", 23, 2.3);
         }
         f(i - 1);
     }
@@ -40,7 +44,7 @@ public class Exceptions {
             g(10);
 
             // ...
-        } catch (MyException2 ex) {
+        } catch (MyException ex) {
             assertEquals("Моё исключение", ex.name);
             assertEquals(23, ex.i);
             assertEquals(2.3, ex.d, 1e-15);
@@ -49,9 +53,23 @@ public class Exceptions {
         }
     }
 
-    private void g(int i) throws MyException2 {
+    private void g(int i) throws MyException {
         if (i == 0)
-            throw new MyException2("Моё исключение", 23, 2.3);
+            throw new MyException("Моё исключение", 23, 2.3);
         g(i - 1);
+    }
+
+    /**
+     * Переполнение стека
+     */
+    @Test(expected = StackOverflowError.class)
+    public void testStackOverflow() {
+        rec();
+    }
+
+    private void rec() {
+        for (int i = 0; i < 10; i++) {
+            rec();
+        }
     }
 }

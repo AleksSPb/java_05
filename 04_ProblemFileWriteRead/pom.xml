@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>java_05</groupId>
-    <artifactId>04_Problem_FileWriteRead</artifactId>
+    <artifactId>04_ProblemFileWriteRead</artifactId>
     <version>1.0</version>
 
     <dependencies>

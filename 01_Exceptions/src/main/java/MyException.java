@@ -1,8 +1,7 @@
 /**
  *
  */
-public class MyException extends RuntimeException {
-
+public class MyException extends Exception {
     final double d;
     final String name;
     final int i;

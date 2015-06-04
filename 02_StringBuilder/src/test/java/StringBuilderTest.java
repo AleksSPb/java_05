@@ -22,42 +22,42 @@ public class StringBuilderTest extends Assert {
      */
     @Test
     public void testAppendInsertDelete() {
-        StringBuilder builder = new StringBuilder();
+        StringBuilder s = new StringBuilder();
 
-        builder.append("boolean: ");
-        builder.append(true);
-        System.out.println(builder);
-        assertEquals("boolean: true", builder.toString());
+        s.append("boolean: ");
+        s.append(true);
+        System.out.println(s);
+        assertEquals("boolean: true", s.toString());
 
-        builder.append("  double: ");
-        builder.append(1.0);
-        System.out.println(builder);
-        assertEquals("boolean: true  double: 1.0", builder.toString());
+        s.append("  double: ");
+        s.append(1.0);
+        System.out.println(s);
+        assertEquals("boolean: true  double: 1.0", s.toString());
 
         // Вставляем подстроку в позицию 13
-        builder.insert(13, ",");
-        System.out.println(builder);
-        assertEquals("boolean: true,  double: 1.0", builder.toString());
+        s.insert(13, ",");
+        System.out.println(s);
+        assertEquals("boolean: true,  double: 1.0", s.toString());
 
         // Удаляем кусок
-        builder.delete(0, 9);
-        System.out.println(builder);
-        assertEquals("true,  double: 1.0", builder.toString());
+        s.delete(0, 9);
+        System.out.println(s);
+        assertEquals("true,  double: 1.0", s.toString());
 
-        builder = new StringBuilder();
+        s = new StringBuilder();
 
         // Цепочка действий
-        builder.append("boolean: ")
+        s.append("boolean: ")
                 .append(true)
                 .append(" double: ")
                 .append(1.2)
                 .insert(13, ",");
-        System.out.println(builder);
-        assertEquals("boolean: true, double: 1.2", builder.toString());
+        System.out.println(s);
+        assertEquals("boolean: true, double: 1.2", s.toString());
 
-        builder.append("  "); // Отступ
+        s.append("  "); // Отступ
         Point point = new Point(2, 3);
-        builder.append(point);
-        assertEquals("boolean: true, double: 1.2  Point{x=2.0, y=3.0}", builder.toString());
+        s.append(point);
+        assertEquals("boolean: true, double: 1.2  Point{x=2.0, y=3.0}", s.toString());
     }
 }
