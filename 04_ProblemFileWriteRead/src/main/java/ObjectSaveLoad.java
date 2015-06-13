@@ -41,7 +41,11 @@ public class ObjectSaveLoad {
      * @return загруженный объект
      */
     public static Object load(String fileName) throws Exception {
-        Scanner scanner = new Scanner(new File(fileName));
+        Scanner scanner = new Scanner(
+                new InputStreamReader(
+                        new FileInputStream(fileName),
+                        "UTF-8"
+                ));
         // Имя класса
         String className = scanner.nextLine().trim();
         System.out.println("Имя класса: " + className);

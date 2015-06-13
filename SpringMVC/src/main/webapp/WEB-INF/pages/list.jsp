@@ -18,5 +18,9 @@
     </ul>
 </c:if>
 
+<c:if test="${empty lists}">
+    В списке ничего нет!
+</c:if>
+
 </body>
 </html>

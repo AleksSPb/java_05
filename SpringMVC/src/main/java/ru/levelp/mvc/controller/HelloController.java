@@ -26,10 +26,11 @@ public class HelloController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public String add(ModelMap model, @RequestParam("a") String a,
-                      @RequestParam("b") String b) {
+    public String add(ModelMap model, @RequestParam("a") int a,
+                      @RequestParam("b") int b) {
         model.addAttribute("a", a);
         model.addAttribute("b", b);
+        model.addAttribute("sum", a + b);
         return "add";
     }
 
@@ -60,26 +61,45 @@ public class HelloController {
         return "table";
     }
 
-    @RequestMapping(value = "/table/{size}", method = RequestMethod.GET)
-    public String printMulTable22(Model model, @PathVariable("size") Integer size) {
+    @RequestMapping(value = "/table/{op}/{size}", method = RequestMethod.GET)
+    public String printOpTable(Model model,
+                               @PathVariable("op") String op,
+                               @PathVariable("size") Integer size) {
         model.addAttribute("html", "size = " + size);
         model.addAttribute("size", size);
-        return "table";
+        int[][] result = new int[size][size];
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                int x = i + 1;
+                int y = j + 1;
+                switch (op) {
+                    case "sum":
+                        result[i][j] = x + y;
+                        break;
+                    case "sub":
+                        result[i][j] = x - y;
+                        break;
+                    case "mul":
+                        result[i][j] = x * y;
+                        break;
+                }
+            }
+        }
+        model.addAttribute("result", result);
+        return "any_table";
     }
 
     /**
-     * Вывод списка
+     * Вывод списка: Питерский метрополитен
      */
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public ModelAndView showList() {
         List<String> list = new ArrayList<String>();
-        list.add("List A");
-        list.add("List B");
-        list.add("List C");
-        list.add("List D");
-        list.add("List 1");
-        list.add("List 2");
-        list.add("List 3");
+        list.add("1. Красная - Кировско-Выборгская");
+        list.add("2. Синяя");
+        list.add("3. Зелёная");
+        list.add("4. Оранжевая");
+        list.add("5. Фиолетовая");
 
         //return back to index.jsp
         ModelAndView model = new ModelAndView("list");

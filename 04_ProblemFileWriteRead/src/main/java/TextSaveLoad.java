@@ -14,7 +14,9 @@ public class TextSaveLoad {
      */
     public static void save(String fileName, String text) throws IOException {
         // Используйте: OutputStreamWriter
-        OutputStreamWriter writer = new OutputStreamWriter(new BufferedOutputStream(new FileOutputStream(fileName)), "UTF-8");
+        OutputStreamWriter writer = new OutputStreamWriter(
+                new BufferedOutputStream(new FileOutputStream(fileName)),
+                "UTF-8");
         writer.write(text);
         writer.close();
     }
@@ -26,7 +28,10 @@ public class TextSaveLoad {
      * @return загруженный текст
      */
     public static String load(String fileName) throws IOException {
-        InputStreamReader reader = new InputStreamReader(new BufferedInputStream(new FileInputStream(fileName)));
+        InputStreamReader reader = new InputStreamReader(
+                new BufferedInputStream(
+                        new FileInputStream(fileName)),
+                "UTF-8");
         StringBuilder res = new StringBuilder();
         while (reader.ready()) {
             int charCode = reader.read();

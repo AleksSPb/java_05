@@ -5,7 +5,7 @@
 </head>
 <body>
 
-${a+b}
+${a+b} ${sum}
 
 </body>
 </html>
